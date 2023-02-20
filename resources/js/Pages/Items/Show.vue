@@ -11,8 +11,8 @@ defineProps({
 
 const deleteItem = id => {
     Inertia.delete(route('items.destroy',{item: id}), {
-    onBefore: () => confirm('本当に削除しますか？')
-  })
+        onBefore: () => confirm('本当に削除しますか？')
+    })
 }
 
 
